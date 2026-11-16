@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>WakeLab</title>
+
+
 </head>
-<body>
-    
+
+<body class="bg-[#F6F7FB] p-8 flex flex-col gap-5">
+    <header class=" flex  justify-between item-center">
+        <p class="text-2xl font-bold text-[#4F46E5] self-center">WakeLab</p>
+        <div class="flex border border-[#E8E7F3]  gap-2 py-1 px-3 rounded-xl bg-[#FFFFFF]">
+            <p class="self-center ">Fatima ID Ali</p>
+            <button class=" rounded-xl  bg-[#EEF2FF] border border-[#E8E7F3]">modifier mon nom</button>
+        </div>
+    </header>
+    <div class="Alert bg-[#D8F3E4]  text-sm p-2 rounded-lg">
+        Alert de succès
+    </div>
+    <div class="flex gap-3">
+        <input class="border border-[#E8E7F3] rounded-xl w-full  " type="text" placeholder="recherche par titre ">
+        <select class="border border-[#E8E7F3] rounded-xl py-1 px-3 name=" theme-Activite" id="theme-Activite">
+            <option>tout les thèmes</option>
+            <option>jeu</option>
+            <option>Apprentissage</option>
+            <option>exercice</option>
+            <option>autre</option>
+        </select>
+    </div>
+    <main class="grid gap-3 grid-cols-4 ">
+        <article class=" flex flex-col gap-2 p-3 border border-[#E8E7F3] rounded-lg bg-[#FFFFFF] ">
+            <div class="flex justify-between ">
+                <p class="bg-[#FFE9C7] px-2 rounded-lg font-bold text-sm text-[#92400E]">jeu</p>
+                <div class="flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" class="size-4 self-center">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                    <p class="text-sm text-[#6F6E7B]">10 min</p>
+                </div>
+
+            </div>
+            <h1 class="text-lg font-bold">tri express des balises HTML</h1>
+            <p class="text-[#6F6E7B] text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+                accusantium est itaque. Illo et esse, rerum assumenda est accusantium nihil, totam aperiam molestias
+                repellendus libero dignissimos consequatur minus, earum ea.</p>
+            <p class="text-[#6F6E7B] text-sm"><span class="font-bold text-black">Objectif</span> Lorem ipsum
+                dolor sit amet.</p>
+            <p class="font-bold text-[#6F6E7B] ">Par <span class="text-sm text-black">Sara Benali</span></p>
+            <div class="flex gap-2">
+                <button class="border-2 p-2 cursor-pointer rounded-lg grow text-[#6366F1]">modifier</button>
+                <button class="border cursor-pointer rounded-lg grow ">Dure</button>
+                <button class="border-2 cursor-pointer  rounded-lg grow text-[#DC2626]">Supprimer</button>
+            </div>
+
+        </article>
+         <!-- <article class=" flex flex-col gap-2 p-3 border border-[#E8E7F3] rounded-lg bg-[#FFFFFF] ">
+            <div class="flex justify-between ">
+                <p class="bg-[#FFE9C7] px-2 rounded-lg font-bold text-sm text-[#92400E]">jeu</p>
+                <div class="flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" class="size-4 self-center">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                    <p class="text-sm text-[#6F6E7B]">10 min</p>
+                </div>
+
+            </div>
+            <h1 class="text-lg font-bold">tri express des balises HTML</h1>
+            <p class="text-[#6F6E7B] text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+                accusantium est itaque. Illo et esse, rerum assumenda est accusantium nihil, totam aperiam molestias
+                repellendus libero dignissimos consequatur minus, earum ea.</p>
+            <p class="text-[#6F6E7B] text-sm"><span class="font-bold text-black">Objectif</span> Lorem ipsum
+                dolor sit amet.</p>
+            <p class="font-bold text-[#6F6E7B] ">Par <span class="text-sm text-black">Sara Benali</span></p>
+            <div class="flex gap-2">
+                <button class="border-2 p-2 cursor-pointer rounded-lg grow text-[#6366F1]">modifier</button>
+                <button class="border cursor-pointer rounded-lg grow ">Dure</button>
+                <button class="border-2 cursor-pointer  rounded-lg grow text-[#DC2626]">Supprimer</button>
+            </div>
+
+        </article>
+         <article class=" flex flex-col gap-2 p-3 border border-[#E8E7F3] rounded-lg bg-[#FFFFFF] ">
+            <div class="flex justify-between ">
+                <p class="bg-[#FFE9C7] px-2 rounded-lg font-bold text-sm text-[#92400E]">jeu</p>
+                <div class="flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" class="size-4 self-center">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                    <p class="text-sm text-[#6F6E7B]">10 min</p>
+                </div>
+
+            </div>
+            <h1 class="text-lg font-bold">tri express des balises HTML</h1>
+            <p class="text-[#6F6E7B] text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+                accusantium est itaque. Illo et esse, rerum assumenda est accusantium nihil, totam aperiam molestias
+                repellendus libero dignissimos consequatur minus, earum ea.</p>
+            <p class="text-[#6F6E7B] text-sm"><span class="font-bold text-black">Objectif</span> Lorem ipsum
+                dolor sit amet.</p>
+            <p class="font-bold text-[#6F6E7B] ">Par <span class="text-sm text-black">Sara Benali</span></p>
+            <div class="flex gap-2">
+                <button class="border-2 p-2 cursor-pointer rounded-lg grow text-[#6366F1]">modifier</button>
+                <button class="border cursor-pointer rounded-lg grow ">Dure</button>
+                <button class="border-2 cursor-pointer  rounded-lg grow text-[#DC2626]">Supprimer</button>
+            </div>
+
+        </article>
+         <article class=" flex flex-col gap-2 p-3 border border-[#E8E7F3] rounded-lg bg-[#FFFFFF] ">
+            <div class="flex justify-between ">
+                <p class="bg-[#FFE9C7] px-2 rounded-lg font-bold text-sm text-[#92400E]">jeu</p>
+                <div class="flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" class="size-4 self-center">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                    <p class="text-sm text-[#6F6E7B]">10 min</p>
+                </div>
+
+            </div>
+            <h1 class="text-lg font-bold">tri express des balises HTML</h1>
+            <p class="text-[#6F6E7B] text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+                accusantium est itaque. Illo et esse, rerum assumenda est accusantium nihil, totam aperiam molestias
+                repellendus libero dignissimos consequatur minus, earum ea.</p>
+            <p class="text-[#6F6E7B] text-sm"><span class="font-bold text-black">Objectif</span> Lorem ipsum
+                dolor sit amet.</p>
+            <p class="font-bold text-[#6F6E7B] ">Par <span class="text-sm text-black">Sara Benali</span></p>
+            <div class="flex gap-2">
+                <button class="border-2 p-2 cursor-pointer rounded-lg grow text-[#6366F1]">modifier</button>
+                <button class="border cursor-pointer rounded-lg grow ">Dure</button>
+                <button class="border-2 cursor-pointer  rounded-lg grow text-[#DC2626]">Supprimer</button>
+            </div>
+
+        </article>
+         <article class=" flex flex-col gap-2 p-3 border border-[#E8E7F3] rounded-lg bg-[#FFFFFF] ">
+            <div class="flex justify-between ">
+                <p class="bg-[#FFE9C7] px-2 rounded-lg font-bold text-sm text-[#92400E]">jeu</p>
+                <div class="flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" class="size-4 self-center">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                    <p class="text-sm text-[#6F6E7B]">10 min</p>
+                </div>
+
+            </div>
+            <h1 class="text-lg font-bold">tri express des balises HTML</h1>
+            <p class="text-[#6F6E7B] text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+                accusantium est itaque. Illo et esse, rerum assumenda est accusantium nihil, totam aperiam molestias
+                repellendus libero dignissimos consequatur minus, earum ea.</p>
+            <p class="text-[#6F6E7B] text-sm"><span class="font-bold text-black">Objectif</span> Lorem ipsum
+                dolor sit amet.</p>
+            <p class="font-bold text-[#6F6E7B] ">Par <span class="text-sm text-black">Sara Benali</span></p>
+            <div class="flex gap-2">
+                <button class="border-2 p-2 cursor-pointer rounded-lg grow text-[#6366F1]">modifier</button>
+                <button class="border cursor-pointer rounded-lg grow ">Dure</button>
+                <button class="border-2 cursor-pointer  rounded-lg grow text-[#DC2626]">Supprimer</button>
+            </div>
+
+        </article> -->
+
+    </main>
 </body>
+
 </html>
